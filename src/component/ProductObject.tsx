@@ -12,7 +12,7 @@ const ProductObject=(props:IProductObject)=>{
     return(
         <Grid container spacing={3} style={{width:'100%',padding:'20px 0px',margin:'0px',borderBottom:'1px solid rgb(204, 198, 198)'}}>
             <Grid item style={{width:'30%'}}>
-                <img src={Object.values(product.image_urls)[0]} width='100px' height='100px'/>
+                <img alt={product.name} src={Object.values(product.image_urls)[0]} width='100px' height='100px'/>
             </Grid>
             <Grid item style={{width:'60%'}}>
                 <Grid container direction='column' alignItems='flex-start'>
