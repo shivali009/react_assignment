@@ -11,13 +11,15 @@ const ProductList = (props: any) => {
         `)
       .then(res => res.json())
       .then(res => {
+       
         setProductList(res);
+        console.log(res,productList)
       })
       .catch(err => {
         console.log(err);
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [categoryId ]);
 
   const products = viewAll
     ? productList.products && productList.products
